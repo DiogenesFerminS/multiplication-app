@@ -4,7 +4,7 @@
   "description": "",
   "main": "./dist/app.mjs",
   "scripts": {
-    "dev": "tsx watch src/app.ts -b 7",
+    "dev": "tsx watch src/app.ts",
     "start": "npm run build && node dist/app.mjs",
     "build": "pkgroll"
   },
