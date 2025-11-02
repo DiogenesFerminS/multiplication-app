@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    
+    /* Configuración Clave para Node.js + ESM */
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext", // Esto es crucial para la resolución de rutas
+    "target": "ES2022",           // Target moderno, compatible con NodeNext
+    
+    // Trata archivos como módulos
+    "moduleDetection": "force",
+    "outDir": "dist/", 
+    
+    // Permite importar JSON (Ahora funciona correctamente con NodeNext)
+    "resolveJsonModule": true, 
+
+    // Opciones de desarrollo y transpilación
+    "allowJs": true,
+    "esModuleInterop": true,
+    
+    /* Importante para herramientas como ts-node o bundlers */
+    "isolatedModules": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

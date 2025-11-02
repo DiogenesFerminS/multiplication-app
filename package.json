@@ -1,0 +1,27 @@
+{
+  "name": "05-tsx-console-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/app.mjs",
+  "scripts": {
+    "dev": "tsx watch src/app.ts -b 7",
+    "start": "npm run build && node dist/app.mjs",
+    "build": "pkgroll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "exports": "./dist/app.mjs",
+  "devDependencies": {
+    "@types/node": "^24.9.2",
+    "@types/yargs": "^17.0.34",
+    "pkgroll": "^2.20.1",
+    "rimraf": "^6.1.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "yargs": "^18.0.0"
+  }
+}
